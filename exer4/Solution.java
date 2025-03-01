@@ -20,6 +20,9 @@ public class Solution {
         if(b==0){
             return 0;
         }
+        if(b==1){
+            return a;
+        }
 
         //if b is even
         if ((b & 1) == 0) {
