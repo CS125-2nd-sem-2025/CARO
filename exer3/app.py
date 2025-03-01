@@ -4,6 +4,10 @@ import socket
 
 app = Flask(__name__)
 
+@app.route('/', methods=['GET'])
+def root():
+    return 'Hello, Exer3'
+
 @app.route('/os', methods=['GET'])
 def get_os():
     os_name = platform.system()
